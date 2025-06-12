@@ -3,6 +3,10 @@ name: contoso-traders-load-testing
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  secrets: read
+
 env:
   KV_NAME: contosotraderskv
   LOAD_TEST_SERVICE_NAME: contoso-traders-loadtest
